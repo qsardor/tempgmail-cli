@@ -47,7 +47,7 @@ function buildCookieHeader(cookies) {
 /**
  * Step 2: Generate a new @gmail.com email address
  */
-export async function generateEmail(session) {
+export async function generateEmail(session, types = ['domain', 'plusGmail', 'googleMail', 'dotGmail']) {
   const res = await fetch(BASE + "/api/generate-email", {
     method: "POST",
     headers: {
@@ -59,7 +59,7 @@ export async function generateEmail(session) {
       "Referer": BASE + "/",
       "Origin": BASE,
     },
-    body: JSON.stringify({}),
+    body: JSON.stringify({ email: types }),
   });
 
   if (!res.ok) throw new Error(`generate-email failed: ${res.status}`);
