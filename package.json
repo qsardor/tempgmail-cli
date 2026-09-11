@@ -1,7 +1,7 @@
 {
   "name": "tempgmail",
   "version": "1.0.0",
-  "description": "Zero-dependency CLI for temporary @gmail.com addresses via Emailnator. No browser, no API key.",
+  "description": "Instant temporary @gmail.com addresses from your terminal. No browser. No API key. Zero dependencies.",
   "type": "module",
   "main": "src/index.js",
   "bin": {
@@ -10,9 +10,27 @@
   "scripts": {
     "start": "node src/cli.js"
   },
-  "keywords": ["temp-mail", "gmail", "disposable", "otp", "cli"],
-  "author": "redseek",
+  "keywords": [
+    "temp-mail",
+    "gmail",
+    "disposable",
+    "temporary-email",
+    "otp",
+    "cli",
+    "emailnator",
+    "no-browser",
+    "zero-dependency"
+  ],
+  "author": "qsardor",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qsardor/tempgmail-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/qsardor/tempgmail-cli/issues"
+  },
+  "homepage": "https://github.com/qsardor/tempgmail-cli#readme",
   "engines": {
     "node": ">=18"
   }
