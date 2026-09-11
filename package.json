@@ -1,0 +1,19 @@
+{
+  "name": "tempgmail",
+  "version": "1.0.0",
+  "description": "Zero-dependency CLI for temporary @gmail.com addresses via Emailnator. No browser, no API key.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "tempgmail": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js"
+  },
+  "keywords": ["temp-mail", "gmail", "disposable", "otp", "cli"],
+  "author": "redseek",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
